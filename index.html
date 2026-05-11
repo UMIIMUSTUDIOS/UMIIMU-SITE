@@ -1,47 +1,144 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>UMIIMU Universe</title>
 
   <style>
 
-    body{
+    *{
       margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
       background:#0f172a;
       color:white;
-      font-family:Arial;
+      font-family:'Arial Black','Trebuchet MS',sans-serif;
+      overflow-x:hidden;
       text-align:center;
+      position:relative;
+    }
+
+    /* Background repeated UMIIMU text */
+
+    .bgtext{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      font-size:90px;
+      line-height:120px;
+      opacity:0.03;
+      color:white;
+      pointer-events:none;
+      z-index:0;
+      word-break:break-word;
+      padding:20px;
+    }
+
+    .container{
+      position:relative;
+      z-index:2;
+      padding:40px 20px;
+    }
+
+    h1{
+      font-size:65px;
+      margin-bottom:15px;
+
+      background:linear-gradient(
+      90deg,
+      #60a5fa,
+      #f472b6,
+      #facc15,
+      #4ade80
+      );
+
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+
+      text-shadow:
+      0 0 20px rgba(255,255,255,0.2);
+
+      letter-spacing:3px;
+    }
+
+    .subtitle{
+      font-size:22px;
+      color:#cbd5e1;
+      margin-bottom:40px;
     }
 
     .poster{
       width:90%;
       max-width:1100px;
-      margin-top:40px;
-      border-radius:25px;
-      box-shadow:0 0 40px rgba(0,0,0,0.5);
+      border-radius:30px;
+
+      box-shadow:
+      0 0 40px rgba(0,0,0,0.5),
+      0 0 80px rgba(59,130,246,0.2);
+
+      margin-bottom:50px;
     }
 
-    .content{
-      padding:40px;
-    }
-
-    h1{
-      font-size:55px;
-      margin-bottom:20px;
-    }
-
-    p{
-      font-size:22px;
-      line-height:1.8;
-      max-width:900px;
+    .about{
+      max-width:1000px;
       margin:auto;
+      font-size:22px;
+      line-height:1.9;
+      color:#e2e8f0;
+
+      background:rgba(255,255,255,0.03);
+
+      padding:40px;
+      border-radius:25px;
+
+      backdrop-filter:blur(10px);
+
+      box-shadow:
+      0 0 20px rgba(255,255,255,0.05);
+    }
+
+    .values{
+      margin-top:50px;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .value-box{
+      background:linear-gradient(
+      135deg,
+      #1e293b,
+      #111827
+      );
+
+      border:2px solid rgba(255,255,255,0.08);
+
+      padding:18px 28px;
+
+      border-radius:20px;
+
+      font-size:20px;
+
+      box-shadow:
+      0 0 20px rgba(255,255,255,0.05);
     }
 
     .footer{
       margin-top:70px;
       padding:30px;
-      color:#aaa;
-      font-size:14px;
+      color:#94a3b8;
+      font-size:15px;
+      line-height:1.8;
     }
 
   </style>
@@ -50,39 +147,97 @@
 
 <body>
 
-<div class="content">
+  <!-- Background text -->
 
-<h1>WELCOME TO THE UMIIMU UNIVERSE</h1>
+  <div class="bgtext">
 
-<img src="UMIIMUPOSTER.png" class="poster">
+    UMIIMU UMIIMU UMIIMU UMIIMU UMIIMU
+    UMIIMU UMIIMU UMIIMU UMIIMU UMIIMU
+    UMIIMU UMIIMU UMIIMU UMIIMU UMIIMU
+    UMIIMU UMIIMU UMIIMU UMIIMU UMIIMU
+    UMIIMU UMIIMU UMIIMU UMIIMU UMIIMU
 
-<br><br><br>
+  </div>
 
-<p>
+  <div class="container">
 
-UMIIMU is an original animated universe inspired by friendship, imagination, futuristic worlds, games, adventure, and mystery.
+    <h1>WELCOME TO THE UMIIMU UNIVERSE</h1>
 
-<br><br>
+    <div class="subtitle">
+      YOU AM I • I AM YOU
+    </div>
 
-The universe follows IMU, UMI, and Umiimu as they discover strange dimensions, hidden portals, magical technology, and exciting adventures across connected worlds.
+    <!-- CHANGE poster.png TO YOUR ACTUAL POSTER FILE NAME -->
 
-<br><br>
+    <img src="UMIIMUPOSTER.png" class="poster">
 
-Kindness Makes Us Stronger.
-<br>
-Everyone Belongs.
+    <div class="about">
 
-</p>
+      UMIIMU is an original animated universe inspired by friendship, imagination, futuristic worlds, games, adventure, mystery, and everyday life experiences.
 
-<div class="footer">
+     The universe follows UMI, IMU, and DUMIIMU as they discover strange dimensions, hidden portals, magical technology, connected worlds, and exciting adventures across different realities.
 
-© 2026 UMIIMU Universe.
-<br>
-Original animated universe created by Examplestudio.
+     Alongside fantasy adventures and sci-fi storytelling, the UMIIMU universe will also feature heartwarming stories inspired by real-life moments, family experiences, friendships, day-to-day activities, celebrations, picnics, holidays, BBQ gatherings, school life, gaming, creativity, and emotional journeys that many people can relate to.
 
-</div>
+     Created with a blend of stylized animation, playful storytelling, sci-fi fantasy, and collectible-inspired designs, UMIIMU is a growing entertainment universe filled with characters, stories, animations, episodes, mini-series, games, artwork, digital experiences, collectibles, toys, accessories, apparel, merchandise, and future creative projects.
 
-</div>
+     More adventures are coming soon.
+      <br><br>
+
+      The universe follows UMI, IMU, and DUMIIMU as they discover strange dimensions,
+      hidden portals, magical technology, and exciting adventures across connected worlds.
+
+      <br><br>
+
+      Created with a blend of stylized animation,
+      playful storytelling,
+      and collectible-inspired designs,
+      UMIIMU is a growing world filled with characters,
+      stories, animations, games, art, and future experiences.
+
+      <br><br>
+
+      More adventures are coming soon.
+
+    </div>
+
+    <div class="values">
+
+      <div class="value-box">
+        Kindness Makes Us Stronger
+      </div>
+
+      <div class="value-box">
+        Everyone Belongs
+      </div>
+
+      <div class="value-box">
+        Friendship Connects Worlds
+      </div>
+
+      <div class="value-box">
+        Imagination Creates Magic
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      © 2026 UMIIMU Universe. All Rights Reserved.
+      <br>
+      © 2026 UMIIMU Universe. All Rights Reserved.
+
+     UMIIMU, UMI, IMU, DUMIIMU, related characters, logos, symbols, artwork, stories, animations, designs, concepts, worldbuilding elements, graphics, merchandise concepts, digital assets, and all associated creative content are original properties of UMIIMUSTUDIO.
+
+     Unauthorized copying, reproduction, redistribution, commercial use, imitation, or modification of the UMIIMU universe, characters, branding, or creative assets is prohibited.
+
+     Original animated universe created by UMIIMUSTUDIO.
+
+    </div>
+
+  </div>
 
 </body>
+
 </html>
+```
